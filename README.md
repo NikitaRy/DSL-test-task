@@ -8,7 +8,7 @@ We have .xml file with blocks-dag. *We suppose that graph has no cycles.*
 
 ## What we do and why
 
-### Install tinyxml2
+## Install tinyxml2
 
     We use this lib because it is lightweight. Maybe, if we have to implement more complex DSL, we choose more powerful lib like libxml (native, use C API).
 
@@ -20,4 +20,3 @@ We have .xml file with blocks-dag. *We suppose that graph has no cycles.*
     ./vcpkg integrate install
     ./vcpkg install tinyxml2
     ```
-    
