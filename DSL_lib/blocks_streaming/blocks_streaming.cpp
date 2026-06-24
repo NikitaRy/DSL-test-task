@@ -1,5 +1,4 @@
 #include "blocks_streaming.h"
-#include "DSL_lib/block_structure/utils.cpp"
 #include "DSL_lib/expressions_building/expressions_building.h"
 
 void write_struct_definition(
