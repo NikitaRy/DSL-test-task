@@ -1,7 +1,5 @@
 #include "block.h"
-/*
-    Search pid | port_type: out/in | port_num
-*/
+
 PortConnection parse_port(const std::string &str)
 {
     PortConnection port_connection;
@@ -16,9 +14,6 @@ PortConnection parse_port(const std::string &str)
     return port_connection;
 }
 
-/*
-    Give name for block
-*/
 std::string get_port_variable(const PortConnection &pc, const std::map<std::string, Block> &blocks)
 {
     auto iter = blocks.find(pc.sid);

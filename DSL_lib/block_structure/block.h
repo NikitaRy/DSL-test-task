@@ -36,6 +36,11 @@ PortConnection parse_port(const std::string &str);
 // Give name for block
 std::string get_port_variable(const PortConnection &pc, const std::map<std::string, Block> &blocks);
 
+// Delete spaces from name
 std::string sanitize_name(const std::string &name);
+
+// Convert double to str
 std::string format_double(double val);
+
+// Сheck whether this node is an operation. We need this function to make topological sorting easier.
 bool is_combinational(const std::string &type);
