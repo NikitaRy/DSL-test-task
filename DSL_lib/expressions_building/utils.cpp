@@ -3,7 +3,7 @@
 #include <queue>
 
 #include "DSL_lib/block_structure/block.h"
-#include "DSL_lib/block_structure/utils.cpp"
+#include "expressions_building.h"
 
 std::vector<std::string> perform_topological_sort(
     const std::map<std::string, Block> &blocks,
