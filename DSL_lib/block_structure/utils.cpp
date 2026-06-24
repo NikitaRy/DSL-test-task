@@ -1,5 +1,6 @@
 #include <string>
 #include <sstream>
+#include "block.h"
 
 /*
     Delete spaces from names

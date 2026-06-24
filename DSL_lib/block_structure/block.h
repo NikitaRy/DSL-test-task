@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <map>
 
@@ -34,3 +35,7 @@ PortConnection parse_port(const std::string &str);
 
 // Give name for block
 std::string get_port_variable(const PortConnection &pc, const std::map<std::string, Block> &blocks);
+
+std::string sanitize_name(const std::string &name);
+std::string format_double(double val);
+bool is_combinational(const std::string &type);
