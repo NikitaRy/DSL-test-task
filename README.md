@@ -21,3 +21,29 @@ Install with vcpkg:
     ./vcpkg integrate install
     ./vcpkg install tinyxml2
 ```
+
+### Parsing from .xml
+
+We parse using the tinyxml2 library. Her choice was justified above.
+
+### Topological sort
+
+In the .xml file, the vertices of the graph can be randomly arranged, so you need to perform topological sorting so as not to process the vertices earlier than they should.
+
+### Generation
+
+The C code generation is implemented in a naive way according to the available graph
+
+## Running
+
+To build:
+
+```sh
+    make
+```
+
+To run:
+
+```sh
+    ./generator
+```
